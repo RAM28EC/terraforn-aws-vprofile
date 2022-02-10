@@ -1,3 +1,3 @@
-provider "aws" {
+provider "AWS" {
   region = "var.AWS_REGION"
 }
