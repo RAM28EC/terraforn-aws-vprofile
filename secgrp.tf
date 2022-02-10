@@ -69,7 +69,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
     from_port = 3306
     protocol  = "tcp"
     to_port   = 3306
-    security_groups = [aws_security_group.vprofile-bastion-sg]
+    security_groups = [aws_security_group.vprofile-bastion-sg.id]
   }
 }
 resource "aws_security_group_rule" "sec_group_allow_itself" {
