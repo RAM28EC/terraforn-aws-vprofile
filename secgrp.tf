@@ -74,7 +74,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
 }
 resource "aws_security_group_rule" "sec_group_allow_itself" {
   from_port         = 0
-  protocol          = ""
+  protocol          = "tcp"
   security_group_id = aws_security_group.vprofile-backend-sg.id
   source_security_group_id = aws_security_group.vprofile-backend-sg.id
   to_port           = 65535
