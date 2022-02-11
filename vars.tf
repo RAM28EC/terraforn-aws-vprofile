@@ -25,7 +25,7 @@ variable "rmquser" {
   default = "rabbit"
 }
 variable "rmqpass" {
-  default = "rmqpass123@"
+  default = "rmqpass1234@"
 }
 variable "dbuser" {
   default = "admin"
