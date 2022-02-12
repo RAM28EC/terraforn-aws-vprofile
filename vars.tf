@@ -19,7 +19,7 @@ variable "USERNAME" {
   default = "ubuntu"
 }
 variable "MYIP" {
-  default = "27.97.3.226/32"
+  default = "27.97.248.82/32"
 }
 variable "rmquser" {
   default = "rabbit"
