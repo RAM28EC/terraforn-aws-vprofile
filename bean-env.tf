@@ -36,7 +36,7 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
   setting {
     namespace = "aws:autoscaling:launchconfiguration"
     name = "IamInstanceProfile"
-    value = ram
+    value = "ram"
   }
   setting {
     name      = "EC2KeyName"
