@@ -66,7 +66,7 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
   setting {
     name      = "SystemType"
     namespace = "aws:elasticbeanstalk:healthreporting:system"
-    value     = "basic"
+    value     = "enhanced"
   }
   setting {
     name      = "RollingUpdateType"
