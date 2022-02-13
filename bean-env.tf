@@ -34,6 +34,11 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
     value     = "t2.micro"
   }
   setting {
+    namespace = "aws:autoscaling:launchconfiguration"
+    name = "IamInstanceProfile"
+    value = ram
+  }
+  setting {
     name      = "EC2KeyName"
     namespace = "aws:autoscaling:launchconfiguration"
     value     = aws_key_pair.vprofilekey.key_name
